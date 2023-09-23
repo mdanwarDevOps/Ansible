@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  gather_facts: false
+  tasks: 
+    - name: Test echo
+      shell: echo "Hello Anwar"
+      register: echo_status
+
+    - name: Display the status
+      debug: var=echo_status
+
+
+
