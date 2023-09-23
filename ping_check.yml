@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Ping check
+      ping:
+      register: ping_status
+      ignore_errors: true
+
+    - name: Displaying the ping status
+      debug: var=ping_status
+
+      
