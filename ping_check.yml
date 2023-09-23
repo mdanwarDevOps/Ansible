@@ -1,4 +1,5 @@
 ---
+# This playbook is to demo Github
 - hosts: localhost
   gather_facts: false
   tasks:
@@ -10,4 +11,3 @@
     - name: Displaying the ping status
       debug: var=ping_status
 
-      
